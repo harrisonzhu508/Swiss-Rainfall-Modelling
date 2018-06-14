@@ -10,9 +10,9 @@ ANODev <- function(model, m){
   
   for (i in 1:m){
     
-    pvalues[i] <- 1 - pchisq(2*(dev[i*2 - 1] - dev[i*2 + 1]), 2)
+    pvalues[i] <- 1 - pchisq(dev[i*2 - 1] - dev[i*2 + 1], 2)
     rownames[i] <- paste("Harmonic:", i)
-    likelihoodstats.simple[i] <- 2*(dev[i*2 - 1] - dev[i*2 + 1])
+    likelihoodstats.simple[i] <- dev[i*2 - 1] - dev[i*2 + 1]
     
   }
   cbind(rownames, likelihoodstats.simple, pvalues)
