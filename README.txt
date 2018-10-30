@@ -1,3 +1,5 @@
+#Documentation
+
 amount.1R - Data preparation for amount of rainfall
 fun.R - Functions written for ANOVA and likelihood ratio tests
 prob.R - Data preparation for frequency of rainy days
